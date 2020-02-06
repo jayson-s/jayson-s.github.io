@@ -1,1 +1,2 @@
-# jayson-s.github.io
+# Jayson Sandhu
+# CS Student @OntarioTechU
