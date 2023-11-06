@@ -1,0 +1,15 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: transparent; /* Set the background color of the body to be transparent */
+    background-image: url(//i.imgur.com/GjscCgG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
