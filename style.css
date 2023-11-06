@@ -1,4 +1,3 @@
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +5,27 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-image: url(//i.imgur.com/GjscCgG.jpg);
+    background-color: #f0f0f0;
+}
+
+.background-image {
+    background-image: url(//img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg?w=2000&t=st=1699290912~exp=1699291512~hmac=f95fead30b9cf52615acbfca362ca8f90d2c6ffe1206bed61aeb4a1abfec457e);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: transparent; /* Set the background color */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header {
-    background-color: #333; /* Set the header background color */
-    color: #fff; /* Set the text color inside the header */
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -41,19 +48,32 @@ section {
 }
 
 h1, h2, h3 {
-    color: #333; /* Set heading text color */
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .project {
-    background-color: #fff; /* Set background color for project boxes */
-    border: 1px solid #ddd;
-    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
     margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    background-color: #333; /* Set footer background color */
-    color: #fff; /* Set text color inside the footer */
-    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
 }
