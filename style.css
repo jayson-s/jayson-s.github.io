@@ -8,8 +8,52 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: transparent; /* Set the background color of the body to be transparent */
     background-image: url(//i.imgur.com/GjscCgG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: transparent; /* Set the background color */
+}
+
+header {
+    background-color: #333; /* Set the header background color */
+    color: #fff; /* Set the text color inside the header */
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #333; /* Set heading text color */
+}
+
+.project {
+    background-color: #fff; /* Set background color for project boxes */
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333; /* Set footer background color */
+    color: #fff; /* Set text color inside the footer */
+    padding: 1rem;
 }
