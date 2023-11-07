@@ -1,49 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Reset some default styles and apply a modern font */
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header styling */
 header {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
-    padding: 0;
 }
 
-nav li {
+header nav li {
     display: inline;
     margin-right: 20px;
 }
 
+/* Section styling */
 .section {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
+.section h1, .section h2, .section h3 {
+    color: #3498db;
+    margin-bottom: 20px;
 }
 
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Project box styling */
 .project {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
     margin: 20px 0;
-    padding: 10px;
-    background-color: #f5f5f5;
 }
 
+.project h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* Social media icon styling */
 .social-icons {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .icon-link {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.icon-link img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Link styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0077b6;
 }
