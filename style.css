@@ -35,12 +35,7 @@ header nav li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.section h1 {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.section h2, .section h3 {
+.section h1, .section h2, .section h3 {
     color: #3498db;
     margin-bottom: 20px;
 }
