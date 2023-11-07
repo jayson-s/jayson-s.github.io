@@ -10,17 +10,6 @@ body {
     background-color: #f0f0f0;
 }
 
-.background-image {
-    background-image: url(//img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg?w=2000&t=st=1699290912~exp=1699291512~hmac=f95fead30b9cf52615acbfca362ca8f90d2c6ffe1206bed61aeb4a1abfec457e);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 header {
     background-color: #333;
     color: #fff;
