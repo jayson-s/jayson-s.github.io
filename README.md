@@ -29,7 +29,3 @@ A C++ project simulating a basic banking system.
 ## Contact
 
 For inquiries or feedback, reach out via email at [jayson.sandhu@yahoo.com](mailto:jayson.sandhu@yahoo.com) or connect on [LinkedIn](https://www.linkedin.com/in/jayson-sandhu).
-
-## License
-
-This project is licensed under the MIT License.
