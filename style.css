@@ -2,14 +2,14 @@
 body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
-/* Header styling */
 header {
     background-color: navy;
     text-align: center;
@@ -21,12 +21,21 @@ header nav ul {
 }
 
 header nav li {
-    color: #fff;
     display: inline;
     margin-right: 40px;
 }
 
-/* Section styling */
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #0077b6;
+}
+
 .section {
     background-color: #fff;
     padding: 40px;
@@ -40,12 +49,10 @@ header nav li {
     margin-bottom: 20px;
 }
 
-.section p {
+.section p, .section ul {
     font-size: 18px;
-    line-height: 1.6;
 }
 
-/* Project box styling */
 .project {
     background-color: #f0f0f0;
     padding: 20px;
@@ -58,7 +65,6 @@ header nav li {
     margin-bottom: 10px;
 }
 
-/* Social media icon styling */
 .social-icons {
     margin-top: 20px;
 }
@@ -73,7 +79,6 @@ header nav li {
     height: 40px;
 }
 
-/* Footer styling */
 footer {
     background-color: navy;
     color: #fff;
@@ -81,7 +86,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Link styling */
 a {
     color: #3498db;
     text-decoration: none;
