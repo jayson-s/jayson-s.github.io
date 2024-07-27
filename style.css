@@ -57,8 +57,19 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+.experience-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .experience-role h3 {
     margin-bottom: 5px;
+}
+
+.experience-duration {
+    font-size: 0.9em;
+    color: #777;
 }
 
 .project {
