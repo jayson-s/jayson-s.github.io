@@ -17,6 +17,7 @@ This repository contains the source code for Jayson Sandhu's personal website. T
 
 - HTML
 - CSS
+- JavaScript
 
 ## Projects
 
