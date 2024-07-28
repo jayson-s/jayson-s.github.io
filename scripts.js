@@ -52,6 +52,9 @@ const projects = [
 
 const projectGrid = document.querySelector('.project-grid');
 
+// Clear any existing projects to avoid duplicates
+projectGrid.innerHTML = '';
+
 projects.forEach(project => {
     const projectItem = document.createElement('div');
     projectItem.classList.add('project-item');
