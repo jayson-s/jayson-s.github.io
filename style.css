@@ -140,3 +140,11 @@ a {
 a:hover {
     color: #0077b6;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav li {
+        display: block;
+        margin-right: 0;
+    }
+}
