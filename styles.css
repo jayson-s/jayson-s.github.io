@@ -54,6 +54,10 @@ header nav a:hover {
     font-size: 18px;
 }
 
+.skills-category {
+    margin-bottom: 20px;
+}
+
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
