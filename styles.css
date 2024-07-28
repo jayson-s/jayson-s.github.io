@@ -55,8 +55,13 @@ header nav a:hover {
     font-size: 18px;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .skills-category {
-    margin-bottom: 20px;
+    width: 48%;
 }
 
 .skills-list {
@@ -73,6 +78,8 @@ header nav a:hover {
     text-align: center;
     border: 1px solid #ccc;
     transition: background 0.3s, border-color 0.3s;
+    flex: 1 1 45%;
+    margin-bottom: 10px;
 }
 
 .skills-list li:hover {
@@ -196,5 +203,17 @@ button[type="submit"]:hover {
     header nav li {
         display: block;
         margin-right: 0;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-category {
+        width: 100%;
+    }
+
+    .skills-list li {
+        flex: 1 1 100%;
     }
 }
