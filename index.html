@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jayson Sandhu's personal website showcasing skills, projects, and experience in software engineering.">
     <title>Jayson Sandhu - Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +39,7 @@
     <section id="skills" class="section">
         <div class="content">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>Java</li>
                 <li>C++</li>
                 <li>Python</li>
@@ -56,13 +56,15 @@
     <section id="portfolio" class="section">
         <div class="content">
             <h2>Portfolio</h2>
-            <div class="project">
-                <h3><a href="https://github.com/jayson-s/Othello">Project 1: Othello Game</a></h3>
-                <p>A JavaFX implementation of the classic board game Othello. Features include AI opponent and strategic analysis.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/jayson-s/Banking-System">Project 2: Banking System</a></h3>
-                <p>A C++ project simulating a basic banking system with functionalities for account creation, transactions, and balance inquiries.</p>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3><a href="https://github.com/jayson-s/Othello">Project 1: Othello Game</a></h3>
+                    <p>A JavaFX implementation of the classic board game Othello. Features include AI opponent and strategic analysis.</p>
+                </div>
+                <div class="project-item">
+                    <h3><a href="https://github.com/jayson-s/Banking-System">Project 2: Banking System</a></h3>
+                    <p>A C++ project simulating a basic banking system with functionalities for account creation, transactions, and balance inquiries.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -74,13 +76,12 @@
                 <div class="experience-role">
                     <h3>Technical Expert - Apple</h3>
                     <span class="experience-duration">August 2021 - Present</span>
-                    </div>
-                    <ul>
-                        <li>Providing expert technical support and guidance to customers.</li>
-                        <li>Resolving technical issues efficiently.</li>
-                        <li>Enhancing customer satisfaction.</li>
-                    </ul>
                 </div>
+                <ul>
+                    <li>Providing expert technical support and guidance to customers.</li>
+                    <li>Resolving technical issues efficiently.</li>
+                    <li>Enhancing customer satisfaction.</li>
+                </ul>
             </div>
             <div class="experience-item">
                 <div class="experience-role">
@@ -126,5 +127,7 @@
             <p>&copy; 2024 Jayson Sandhu - Software Engineer</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
