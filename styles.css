@@ -61,24 +61,25 @@ header nav a:hover {
 }
 
 .skills-category {
-    width: 48%;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.skills-category:last-child {
+    margin-right: 0;
 }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     padding: 0;
 }
 
 .skills-list li {
     background: #f0f0f0;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     border: 1px solid #ccc;
     transition: background 0.3s, border-color 0.3s;
-    flex: 1 1 45%;
     margin-bottom: 10px;
 }
 
@@ -210,10 +211,11 @@ button[type="submit"]:hover {
     }
 
     .skills-category {
-        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .skills-list li {
-        flex: 1 1 100%;
+        margin-bottom: 10px;
     }
 }
