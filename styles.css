@@ -154,3 +154,15 @@ footer a {
 .contact-form input[type="submit"]:hover {
     background-color: #34495e;
 }
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-link img {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
