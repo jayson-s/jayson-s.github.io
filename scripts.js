@@ -26,7 +26,7 @@ function validateEmail(email) {
 }
 
 // Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
@@ -50,7 +50,7 @@ const projects = [
     }
 ];
 
-const projectGrid = document.querySelector('.project-grid');
+const projectGrid = document.querySelector('.projects');
 
 // Clear any existing projects to avoid duplicates
 projectGrid.innerHTML = '';
@@ -63,6 +63,7 @@ projects.forEach(project => {
     const projectLink = document.createElement('a');
     projectLink.href = project.link;
     projectLink.textContent = project.title;
+    projectLink.target = "_blank"; // Opens the link in a new tab
     projectTitle.appendChild(projectLink);
     
     const projectDescription = document.createElement('p');
