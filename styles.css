@@ -1,18 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --accent-color: #7f8c8d;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: var(--primary-color);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,7 +34,7 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #34495e;
+    background-color: var(--secondary-color);
     padding: 10px 0;
 }
 
@@ -40,6 +43,7 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -57,7 +61,7 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #2c3e50;
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 28px;
@@ -70,7 +74,7 @@ section p, section ul {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -80,10 +84,15 @@ section p, section ul {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+    transform: translateY(-5px);
 }
 
 .projects .project h3 {
-    margin-top: 5;
+    margin-top: 5px;
 }
 
 /* Professional Experience Section */
@@ -93,22 +102,18 @@ section p, section ul {
 
 .experience .job {
     margin-bottom: 30px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    box-shadow: none;
 }
 
 .experience .job h3 {
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--primary-color);
     margin-bottom: 5px;
 }
 
 .experience .job .experience-duration {
     display: block;
     font-size: 16px;
-    color: #7f8c8d;
+    color: var(--accent-color);
     margin-bottom: 10px;
 }
 
@@ -122,17 +127,23 @@ section p, section ul {
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px 0;
+    border-top: 1px solid var(--accent-color);
 }
 
 footer a {
-    color: #ecf0f1;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
 .contact-form {
     background-color: #fff;
     padding: 20px;
@@ -151,15 +162,16 @@ footer a {
 }
 
 .contact-form input[type="submit"] {
-    background-color: #2c3e50;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #34495e;
+    background-color: var(--secondary-color);
 }
 
 .icon-link {
@@ -167,9 +179,14 @@ footer a {
 }
 
 .icon-link img {
-    width: 110px;
+    width: 30px;
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 3px;
     margin-left: -5px;
+    transition: transform 0.3s ease;
+}
+
+.icon-link img:hover {
+    transform: scale(1.1);
 }
