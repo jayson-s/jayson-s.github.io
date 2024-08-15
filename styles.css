@@ -48,6 +48,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .container {
@@ -88,7 +89,18 @@ section p, section ul {
 }
 
 .projects .project:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+}
+
+/* Remove blue color and underline for project links */
+.projects .project a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects .project a:hover {
+    color: var(--primary-color);  /* Change color on hover */
+    text-decoration: underline;  /* Optional: Add underline on hover */
 }
 
 .projects .project h3 {
@@ -183,10 +195,11 @@ footer a:hover {
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 3px;
-    margin-left: -5px;
+    margin-left: -4px;
     transition: transform 0.3s ease;
 }
 
 .icon-link img:hover {
-    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    transform: scale(1.15);
 }
