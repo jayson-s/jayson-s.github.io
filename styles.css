@@ -96,7 +96,7 @@ section p, section ul {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 350px) {
     .about-container {
         flex-direction: column; 
         text-align: center;
