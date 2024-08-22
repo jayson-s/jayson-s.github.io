@@ -73,6 +73,40 @@ section p, section ul {
     line-height: 1.6;
 }
 
+#about {
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 325px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1; 
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 150px;
+    }
+}
+
 /***********************
 
 #skills {
