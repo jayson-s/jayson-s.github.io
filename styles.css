@@ -58,14 +58,14 @@ nav a:hover {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 section h2 {
     border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    font-size: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 30px;
 }
 
 section p,
@@ -75,13 +75,13 @@ section ul {
 }
 
 #about {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .about-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .about-image img {
@@ -155,7 +155,7 @@ section ul {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
 .projects .project {
@@ -163,7 +163,7 @@ section ul {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 10px;
-    height: 75%;
+    height: 80%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -183,7 +183,7 @@ section ul {
 }
 
 .projects .project h3 {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .experience {

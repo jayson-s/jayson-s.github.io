@@ -51,16 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Dynamic content loading for portfolio projects
+    // Dynamic content loading for portfolio projects with one-sided hover effect
     const projects = [
         {
-            title: "Project 1: Othello Game",
-            description: "A JavaFX implementation of the classic board game Othello. Features include AI opponent and strategic analysis.",
+            title: "Othello Game",
+            description: "A dynamic implementation of the classic Othello board game using JavaFX. The AI opponent adapts to various difficulty levels, providing strategic challenges for users. Built using Java, it showcases complex logic design and real-time user interactions.",
             link: "https://github.com/jayson-s/Othello"
         },
         {
-            title: "Project 2: Banking System",
-            description: "A C++ project simulating a basic banking system with functionalities for account creation, transactions, and balance inquiries.",
+            title: "Banking System",
+            description: "Simulated banking system created in C++ that handles account creation, transactions, and balance inquiries. This project focused on ensuring data integrity, scalability, and optimal user interface design. It demonstrates advanced data structures and error-handling methods.",
             link: "https://github.com/jayson-s/Banking-System"
         }
     ];
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear any existing projects to avoid duplicates
         projectGrid.innerHTML = '';
 
-        // Add dynamic content for the projects
+        // Add dynamic content for the projects as one-sided hover cards
         projects.forEach(project => {
-            const projectItem = document.createElement('div');
-            projectItem.classList.add('project-item');
-            
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('project', 'hover-card');  // Use 'project' and 'hover-card' classes
+
             const projectTitle = document.createElement('h3');
             const projectLink = document.createElement('a');
             projectLink.href = project.link;
@@ -86,10 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectDescription = document.createElement('p');
             projectDescription.textContent = project.description;
             
-            projectItem.appendChild(projectTitle);
-            projectItem.appendChild(projectDescription);
-            
-            projectGrid.appendChild(projectItem);
+            projectCard.appendChild(projectTitle);
+            projectCard.appendChild(projectDescription);
+
+            // Append the card to the grid
+            projectGrid.appendChild(projectCard);
         });
     }
 });
