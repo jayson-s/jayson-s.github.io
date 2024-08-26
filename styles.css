@@ -41,7 +41,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 12px;
     font-size: 16px;
     transition: all 0.3s ease;
 }
@@ -63,8 +63,9 @@ section {
 
 section h2 {
     border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 30px;
 }
 
