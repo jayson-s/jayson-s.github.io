@@ -1,30 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Contact form submission handler
-    const contactForm = document.getElementById('contact-form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            const name = document.querySelector('input[name="name"]').value;
-            const email = document.querySelector('input[name="email"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
-            
-            if (name === "" || email === "" || message === "") {
-                alert("Please fill in all fields.");
-                return;
-            }
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-            if (!validateEmail(email)) {
-                alert("Please enter a valid email address.");
-                return;
-            }
+        // Get form values
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
 
-            // Simulate form submission
-            alert('Form submitted successfully!');
-            contactForm.reset();
+        // Form validation
+        if (!name || !email || !message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // EmailJS send method
+        emailjs.send('service_pmunvq7', 'template_6d5qxnt', {
+            from_name: name,
+            from_email: email,
+            message: message
+        }).then(function(response) {
+            alert('Message sent successfully!');
+            document.getElementById('contact-form').reset(); // Reset form after successful submission
+        }, function(error) {
+            alert('Failed to send message. Please try again later.');
         });
-    }
+    });
 
     // Email validation function
     function validateEmail(email) {
