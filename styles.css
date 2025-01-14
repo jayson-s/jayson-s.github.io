@@ -86,7 +86,7 @@ section ul {
 }
 
 .about-image img {
-    width: 325px;
+    width: 277px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -315,4 +315,74 @@ footer a:hover {
 .icon-link img:hover {
     transition: transform 0.3s ease;
     transform: scale(1.15);
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .skill-pill {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 575px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .footer-content {
+        gap: 5px;
+    }
+
+    .social-icons img {
+        height: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
 }
