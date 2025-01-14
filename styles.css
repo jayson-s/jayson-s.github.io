@@ -156,15 +156,16 @@ section ul {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 .projects .project {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 18px;
     border-radius: 10px;
-    height: 80%;
+    height: auto;
+    min-height: 280px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -184,7 +185,7 @@ section ul {
 }
 
 .projects .project h3 {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .experience {

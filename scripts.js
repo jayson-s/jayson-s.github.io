@@ -68,6 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Banking System",
             description: "Simulated banking system created in C++ that handles account creation, transactions, and balance inquiries. This project focused on ensuring data integrity, scalability, and optimal user interface design. It demonstrates advanced data structures and error-handling methods.",
             link: "https://github.com/jayson-s/Banking-System"
+        },
+        {
+            title: "House Prices Prediction",
+            description: "Data model using Python to analyze housing market trends and predict property prices. It demonstrates EDA, feature engineering, and machine learning, with a focus on data preprocessing, model optimization, and insightful visualizations to uncover market patterns.",
+            link: "https://github.com/jayson-s/RealEstatePrediction"
         }
     ];
 
