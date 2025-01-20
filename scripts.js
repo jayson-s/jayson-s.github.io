@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dynamic content loading for portfolio projects with one-sided hover effect
     const projects = [
         {
-            title: "Othello Game",
-            description: "A dynamic implementation of the classic Othello board game using JavaFX. The AI opponent adapts to various difficulty levels, providing strategic challenges for users. Built using Java, it showcases complex logic design and real-time user interactions.",
-            link: "https://github.com/jayson-s/Othello"
+            title: "LifeBalance+",
+            description: "A comprehensive life management and wellness app built with Flutter. It integrates task organization, habit tracking, workout tracking, and personalized analytics to help users achieve their personal and professional goals. With a sleek design, modern UI/UX, and cross-platform functionality, it promotes productivity, wellness, and a balanced lifestyle seamlessly across all devices.",
+            link: "https://github.com/jayson-s/LifeBalancePlus"
         },
         {
             title: "Banking System",
@@ -73,6 +73,11 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "House Prices Prediction",
             description: "Data model using Python to analyze housing market trends and predict property prices. It demonstrates EDA, feature engineering, and machine learning, with a focus on data preprocessing, model optimization, and insightful visualizations to uncover market patterns.",
             link: "https://github.com/jayson-s/RealEstatePrediction"
+        },
+        {
+            title: "Othello Game",
+            description: "A dynamic implementation of the classic Othello board game using JavaFX. The AI opponent adapts to various difficulty levels, providing strategic challenges for users. Built using Java, it showcases complex logic design and real-time user interactions.",
+            link: "https://github.com/jayson-s/Othello"
         }
     ];
 
