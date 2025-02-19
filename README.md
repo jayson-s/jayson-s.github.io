@@ -19,14 +19,6 @@ This repository contains the source code for Jayson Sandhu's personal website. T
 - CSS
 - JavaScript
 
-## Projects
-
-### [Othello Game](https://github.com/jayson-s/Othello)
-A JavaFX implementation of the classic board game Othello.
-
-### [Banking System](https://github.com/jayson-s/Banking-System)
-A C++ project simulating a basic banking system.
-
 ## Contact
 
 For inquiries or feedback, reach out via email at [jayson.sandhu@yahoo.com](mailto:jayson.sandhu@yahoo.com) or connect on [LinkedIn](https://www.linkedin.com/in/jayson-sandhu).
